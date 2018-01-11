@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+    <center><h1>LIBRARY</h1></center>>
+    <br> <br> <br> <br> <br> <br> <br>
+<table>
+
+    <tr>
+        <th>Book name</th>
+        <th>Author name</th>
+    </tr>
+    {% for item in book %}
+    <tr> 
+        <td>{{ item.name }}</td>
+
+        <td>{{ item.author_name }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
